@@ -1,3 +1,7 @@
+<svelte:head>
+    <title>.Astronomy Live Feed</title> 
+</svelte:head>
+
 <script>
   import Schedule from "../lib/Schedule.svelte";
   import BlueskyFeed from "../lib/BlueskyFeed.svelte";
@@ -5,22 +9,24 @@
 
 <div class="flex-row-container">
   <div class="flex-row-item" style="max-width: 350px;">
-    <img src="ESA_logo_White.png" alt="ESA logo in white" width="70%" />
-    <img src="dotlogo_white.png" alt="ESA logo in white" width="100%" />
-    <p>ESAC, Madrid | April 2024</p>
-    <p>dotastronomy.com/thirteen</p>
-  
-    <div class="notice" style="margin-bottom: auto;">
-      <h2>Day 0</h2>
-      <p>Today is <strong>tutorial</strong> day!</p>
-    </div>
-  
-    <div class="notice" style="margin-bottom: auto;">
-      <h2>Slack</h2>
-      <p>Please sign up to the Slack! (see emails for invite link)</p>
-    </div>
+    <div class="flex-vertical-container">
+      <div class="flex-vertical-item">
+        <img src="ESA_logo_White.png" alt="ESA logo in white" width="70%" />
+        <img src="dotlogo_white.png" alt="ESA logo in white" width="100%" />
+        <p>ESAC, Madrid | April 2024</p>
+        <p style="margin-bottom: 10px">dotastronomy.com/thirteen</p>
+      </div>
 
-    
+      <div class="flex-vertical-item notice">
+        <h2>Day 0</h2>
+        <p>Today is <strong>tutorial</strong> day!</p>
+      </div>
+
+      <div class="flex-vertical-item notice">
+        <h2>Slack</h2>
+        <p>Please sign up to the Slack! (see emails for invite link)</p>
+      </div>
+    </div>
   </div>
 
   <div class="flex-row-item" style="overflow-y: scroll;">
@@ -38,12 +44,33 @@
   </div>
 
   <div class="flex-row-item" style="overflow-y: scroll;">
-    <BlueskyFeed search="#dotastro"/>
-    
+    <BlueskyFeed search="#dotastro" />
   </div>
 </div>
 
 <style>
+  /* Large */
+  .flex-vertical-container {
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+    justify-content: start;
+    width: 100%;
+    /* height: 96%; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+
+  .flex-vertical-container > .flex-vertical-item {
+    flex: 1 1 25%; /*grow | shrink | basis */
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+
   /* Large */
   .flex-row-container {
     display: flex;
@@ -65,6 +92,8 @@
   .flex-row-item {
     /* background-color: white; */
     border-color: white;
+    margin-top: 0px;
+    padding-bottom: 0px;
     padding-left: 80px;
     padding-right: 80px;
   }
@@ -103,12 +132,12 @@
   }
 
   .notice {
-    /* background-color: #ffffff;
-    color: #003247; */
+    background-color: #004765;
     border: solid 2px;
     border-radius: 30px;
     padding: 10px;
-    margin-top: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 
   img {

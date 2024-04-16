@@ -44,16 +44,6 @@
 </div>
 
 <style>
-  .flex-row-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    width: 95%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   /* Large */
   .flex-row-container {
     display: flex;
@@ -63,6 +53,8 @@
     width: 95%;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
 
   .flex-row-container > .flex-row-item {

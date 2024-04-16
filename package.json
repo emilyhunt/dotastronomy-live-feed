@@ -17,6 +17,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"bsky-embed": "^0.1.2"
+		"bsky-embed": "^0.1.2",
+		"papaparse": "^5.4.1"
 	}
 }

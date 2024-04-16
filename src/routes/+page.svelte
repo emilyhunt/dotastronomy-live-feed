@@ -77,7 +77,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    width: 95%;
+    width: 98%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 0px;
@@ -121,13 +121,16 @@
     .flex-row-container {
       /* On small screens, we are no longer using row direction but column */
       flex-direction: column;
+      /* width: 100%; */
+      margin-left: 0px;
+      margin-right: 0px;
     }
 
     .flex-row-item {
       border-right: solid 0px;
       padding-bottom: 50px;
-      padding-left: 20px;
-      padding-right: 20px;
+      padding-left: 10px;
+      padding-right: 10px;
     }
   }
 

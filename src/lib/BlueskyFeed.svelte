@@ -17,7 +17,7 @@
   });
 </script>
 
-<h2>Bluesky {search} live feed:</h2>
+<h2>Bluesky {search} feed:</h2>
 {#key lastRefreshTime}
   <bsky-embed
     {search}
@@ -25,6 +25,6 @@
     limit="20"
     link-target="_blank"
     link-image="false"
-    custom-styles={".border-slate-300 {border: 0px;} .border-slate-800 {border: 1px solid;}"}
+    custom-styles={".border-slate-300 {border-color: #ffffff;} article {margin-bottom: 10px; border: 1px solid; border-radius: 10px; background-color: #004765}"}
   />
 {/key}

@@ -1,6 +1,5 @@
 <script>
   export let sheet;
-  console.log("sheet", sheet);
 
   function filterRow(row) {
     const rowLength = row.length;
@@ -13,7 +12,6 @@
       );
     const colspan = Math.floor(rowLength / indexOfLastGoodValue);
     const rowShouldBeHighlighted = row.some((value) => /\blunch\b|\bbreak\b|\bdinner\b/.test(value.toLowerCase()));
-    console.log(row, indexOfLastGoodValue);
     return {
       data: row.slice(0, indexOfLastGoodValue + 1),
       colspan: colspan,

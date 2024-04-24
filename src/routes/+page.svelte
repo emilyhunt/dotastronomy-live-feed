@@ -18,13 +18,13 @@
       </div>
 
       <div class="flex-vertical-item notice">
-        <h2>Day 0</h2>
-        <p>Today is <strong>tutorial</strong> day!</p>
+        <h2>Day 1</h2>
+        <p>Today is a <strong>talks</strong> and <strong>unconference</strong> day</p>
       </div>
 
       <div class="flex-vertical-item notice">
-        <h2>Slack</h2>
-        <p>Please sign up to the Slack! (see emails for invite link)</p>
+        <h2>Conference dinner</h2>
+        <p>The conference dinner is <strong>tonight</strong> at 8pm</p>
       </div>
     </div>
   </div>
